@@ -25,6 +25,10 @@
 	border-style: solid;
 	height: 100px;
 	overflow: scroll;
+	/*width: 200px;*/
+  height: 60px;
+  background-color: #eee;
+  overflow: visible;
 }
 .col-md-4{
 	padding: 10px;
