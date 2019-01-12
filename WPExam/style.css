@@ -1,0 +1,32 @@
+
+#image{
+	border-style:hidden;
+	padding: 50px;
+}
+#points{
+	border-style: solid;
+	padding: 50px;
+}
+#abc{
+	overflow: scroll;
+}
+.courseinfo{
+	border-style: solid;
+	position: relative;
+  text-align: center;
+  color: black;
+}
+.bottom-left{
+	position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+.about{
+	border-style: solid;
+	height: 100px;
+	overflow: scroll;
+}
+.col-md-4{
+	padding: 10px;
+	box-shadow: 1px 0.5px 0.5px red;
+}
