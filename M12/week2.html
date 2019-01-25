@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Comment Box</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  
+<div class="container">
+  <body style="align-content: center">
+<!-- <input type="button" value="login" id="loginbtn" onclick="return check_info()"/> -->
+    <form id="commentform">
+            <label>Name</label><br/>
+            <input id="name" type="text" required/><br>
+            <label>Comment</label><br/>
+            <textarea id="comment" rows="4" cols="50" name="comment" form="usrform"></textarea><br>
+              
+            <label>Password</label><br/>
+            <input id="pwd" type="password" name="pwd"><br>
+            <input type='reset' value='Submit' name='reset' id="loginbtn" onclick="check_info()">
+     <!-- <input type="button" value="Submit" id="loginbtn" onclick="check_info()"/> -->
+    </form>
+    <!-- id="display" style="border-style: solid; height:auto; width:40%" -->
+    <div style="border-style:solid">
+    <p style="font:30" id="dc"></p>
+    <p id="n"></p>
+    </div>
+        
+</div>
+<script type="text/javascript">
+
+    var arr = [];
+    function check_info()
+    
+    {
+    
+    var username=document.getElementById("name").value;
+    var password=document.getElementById("pwd").value;
+    var comment = document.getElementById("comment").value;
+    // var id = 0;
+        if(username.length != 0 && password == "123456" && comment.length != 0)
+    
+          {
+            // alert("Login Successful");
+            // var user[id++] = username;
+            arr.push(comment,username);
+            var text="";
+            document.getElementById("comment").value = "";
+            // document.getElementById("dc").innerHTML=comment;
+            // document.getElementById("n").innerHTML=username;
+            var len=arr.length;
+            // console.log(arr[0]);
+            for (var i = len-1; i >= 0; i=i-2) { 
+                console.log(arr[i-1]+" "+arr[i]);
+                    text=text+ "<h2>"+arr[i-1]+"</h2>"+" "+arr[i]+"</br>"
+                    document.getElementById("dc").innerHTML=text;
+                // document.getElementById("n").innerHTML=arr[i];
+       
+    
+    
+            }
+            return false;
+          }
+    
+          else
+          { 
+            alert("Please fill the details or check the password"); 
+          }
+        //   document.getElementById("commentform").reset();
+      }
+    </script>
+</body>
+</html>
