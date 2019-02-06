@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MockUp Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class = "container-fluid">
+    <div class="row heading">
+      <h1>Learning By Doing</h1>
+    </div>
+    <div class="Questions">
+      <p id=question></p>
+      <button type="button" class="btn btn-info" onclick="warning()">Hint</button><br>
+      <div id="hint" class="alert alert-info" style="display: none"></div>
+      <div id="option">
+      </div>
+    </div>
+    <div class="row">
+      <button type="button" id="prev" class="btn btn-info" style="float: left; display: none;" onclick="nextQue(--i)">Previous</button>
+      <button type="button" id="next" class="btn btn-info" style="float: right;" onclick="nextQue(++i)">Next</button>
+
+    </div>
+    <div id="reset">
+      
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

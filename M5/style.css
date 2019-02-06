@@ -1,0 +1,23 @@
+h1{
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+
+}
+.heading{
+	background-color: lightblue;
+}
+.Questions{
+	background: lightgrey;
+	border-radius: 15px;
+	margin: 50px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#reset{
+	text-align: center;
+}
+body{
+	background-color: lightyellow;
+}
