@@ -1,0 +1,76 @@
+{"produc": [{
+            "title": "Samsung Galaxy",
+            "description": "Super AMOLED Display with 1480 x 720 (HD+) Resolution",
+            "image": "1.jpeg",
+            "quantity":"10"
+        },
+        {
+            "title": "Mi A2",
+            "description": "15.2cm (5.99) large display",
+            "image": "2.jpeg",
+            "quantity":"20"
+        },
+        {
+            "title": "Apple iphone 32GB",
+            "description": "11.4 cm(4.7)display",
+            "image": "3.jpeg",
+            "quantity":"30"
+        },
+        {
+            "title": "red mi note 6 pro",
+            "description": "15.9 cm (6.26 inch) FHD+ Display with Resolution ",
+            "image": "4.jpeg",
+            "quantity":"40"
+        },
+        {
+            "title": "Honor 10 Lite",
+            "description": "Octa core (2.2 GHz, Quad Core + 1.7 GHz, Quad core) 4 GB RAM",
+            "image": "5.jpg",
+            "quantity":"40"
+        },
+        {
+            "title": "Huawei Y9 2019",
+            "description": "6.5 inches (16.51 cm) , Octa core (2.2 GHz) HiSilicon Kirin",
+            "image": "6.jpg",
+            "quantity":"40"
+        },
+        {
+            "title": "Realme U1",
+            "description": "MediaTek Helio P70 13 MP + 2 MP Dual Primary Cameras LED Flash",
+            "image": "7.jpg",
+            "quantity":"40"
+        },
+        {
+            "title": "Asus Zenfone M2",
+            "description": "Snapdragon 660 6.26 inches (15.9 cm) 5000 mAh",
+            "image": "8.jpg",
+            "quantity":"40"
+        },
+        {
+            "title": "Vivo Y95",
+            "description": "Snapdragon 439 6.22 inches (15.8 cm) 4030 mAh",
+            "image": "9.jpg",
+            "quantity":"40"
+        },
+        {
+            "title": "OPPO A7",
+            "description": "Snapdragon 450 13 MP + 2 MP Dual Primary Cameras 16 MP Front Camera",
+            "image": "10.jpg",
+            "quantity":"40"
+        },
+        {
+            "title": "Nokia 8.1",
+            "description": "6.18 inches (15.7 cm) 1080x2246 px, 403 PPI 3500 mAh",
+            "image": "11.jpg",
+            "quantity":"40"
+        },
+        {
+            "title": "Micromax Infinity N12",
+            "description": "6.19 inches (15.72 cm) 4000 mAh",
+            "image": "12.jpg",
+            "quantity":"40"
+        }
+
+    ]}
+
+
