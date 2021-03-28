@@ -1,0 +1,46 @@
+
+<body background="assets/bg1.jpg">
+  
+  <div class="topnav" >
+  
+   
+    <!-- <div  class="nav navbar-nav navbar-left">
+        <h1 style="text-align:center; font-family:initial">CART SURFER</h1>
+    </div>  -->
+          <a routerLink="/" style="text-align:center; font-family:initial;font-size:x-large"><b>CART SURFER</b></a> 
+          
+          <div  class="nav navbar-nav navbar-right">
+          <a routerLink ="/user" > <img src="assets/u.png" width="50px"></a>
+          </div>
+          
+          <div  class="nav navbar-nav navbar-right">
+              <a  routerLink="/register"><b>Register</b></a>
+            </div> 
+
+            
+            <div class="nav navbar-nav navbar-right">
+                <a routerLink="/login" ><b>Login</b></a>
+              </div>
+              <!-- <div class="nav navbar-nav navbar-right">
+                  <a routerLink="/user" ><b>Logout</b></a>
+                </div> -->
+        <div class="nav navbar-nav navbar-right">
+          <a routerLink ="/cart" > <img src="assets/cart.jpg" width="50px"></a>
+          
+        </div>
+        <!-- <div class="nav navbar-nav navbar-right">
+          Welcome {{name}}
+        </div> -->
+       
+          <div class="search-container">
+            <form action="/action_page.php">
+              <div class="nav navbar-nav navbar-right"></div>
+              <input  class="nav navbar-nav navbar-left"type="text" placeholder="Search.." name="search" (keyup) = "searchItem($event)" [(ngModel)]="sea">
+              <button type="reset" id = "s"  routerLink="/description/{{j}}"> <i class="fa fa-search"></i> </button>
+            </form>
+          </div>
+        </div>
+     
+  
+  
+  <router-outlet></router-outlet> </body>

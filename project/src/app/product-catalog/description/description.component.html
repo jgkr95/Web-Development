@@ -1,0 +1,60 @@
+
+<div class = "container" background="assets/bg1.jpg" style="height: 1500px;">
+  <br>
+  <div class="row" >
+      <div class="col-sm-5">
+          <img  class = "product" src="assets/images/{{i+1}}.jpg" alt="W3Schools.com">
+          <br>
+          <h2>Price: {{p[i].price}}/- </h2>
+      </div>
+      
+
+      <div class = "col-sm-7" style = "background-color: rgb(241, 245, 241)">
+        <br>
+       <h1 style="font-family: initial;font-size: xx-large" >{{p[i].title}}</h1>
+       <br>
+       <br>
+       <h4 style="font-family: initial">Description: {{p[i].description}} </h4><br>
+        <h4 style="font-family: initial">Quantity: {{p[i].quantity}} </h4>
+       <br>
+      <button class="btn btn-primary" type = "button" (click) = "addcart(i)"> Add to Cart</button>
+        <br>
+        <br>
+      <form>
+        <!-- <div class="form-group"> -->
+          <!-- <label for="comment">Product Review:</label> -->
+          <textarea type="textarea" name="comment" [(ngModel)]="comment" id="comment"></textarea>
+        <!-- </div> -->
+        <h3>Rating!!</h3>
+        <fieldset class="rating">
+           <input type="radio" id="star5" (click) = "addStar(5)" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+           <input type="radio" id="star4" (click) = "addStar(4)" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+           <input type="radio" id="star3" (click) = "addStar(3)" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+           <input type="radio" id="star2" (click) = "addStar(2)" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+           <input type="radio" id="star1" (click) = "addStar(1)" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+       </fieldset>
+       <br>
+       <br>
+        <input type="reset" (click)= "addfeed(i)" value="Add Feedback">
+      </form>
+       </div>
+       
+      
+       <br>
+      
+      </div>
+      <h2> <strong> Reviews</strong> </h2>
+      <br>
+      <br>
+      <div *ngFor = "let f of feed">
+        
+        <h4>Comment: {{f.comment}}</h4>
+        <h4>Rating: {{f.star}} </h4>
+        <hr class="style1">
+
+      </div>
+</div>
+<router-outlet></router-outlet>
+
+
+  

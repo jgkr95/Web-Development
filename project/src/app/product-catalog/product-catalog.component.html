@@ -1,0 +1,69 @@
+<div class="container-fluid">
+  
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="assets/1.jpg" alt="Los Angeles" style="width:100%;">
+      </div>
+
+      <div class="item ">
+          <img src="assets/4.jpg" alt="Los Angeles" style="width:100%;">
+        </div>
+
+      <div class="item">
+        <img src="assets/3.jpg" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="assets/2.jpg" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only"></span>
+    </a>
+  </div>
+</div>
+<div>
+
+ 
+  <div class="flex-container" *ngFor = "let prod of p; index as i" style="display:inline-block">
+      <div class="card-deck" >
+          <div class="card bg-warning">
+           <!-- <h3>{{prod.title}} </h3> -->
+           
+           <br>
+           <img  class = "product" src="assets/images/{{i+1}}.jpg" alt="W3Schools.com">
+           <br>
+           <a  style = "font-size: 20px; font-family:initial" routerLink="/description/{{i}}"  >{{prod.title}}</a>
+           <!-- <h4>Description: {{prod.description}} </h4><br> -->
+           <!-- Quantity: {{prod.quantity}} -->
+           <br>
+           <!-- <a href="#" class="btn btn-primary">See Profile</a> -->
+
+           <button  class="btn btn-primary" (click)=addcart(i)>Add to cart</button>
+          <br>
+           <br>
+         
+           
+           <!-- Image:  <img src="assets/Img/{{prod.image}}" alt="W3Schools.com"> -->
+          </div>
+        </div>
+      </div>
+  
+      
+  

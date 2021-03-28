@@ -88,11 +88,16 @@ module.exports = function(app) {
 
 	app.post('/login',jsonparser,(req,res)=>{
 		console.log(req.body);
+		console.log("login request called");
+		// console.log(data);
 		userinfoe.find({}, (err, data)=>{
 			if(err) throw err;
 			else {
+				// console.log(data);
 				for(var i=0;i<data.length;i++) {
+					// console.log(data[i].email===req.body.email);
 					if((data[i].email===req.body.email || data[i].phone===req.body.email)&&data[i].password===req.body.password) {
+						console.log("Validated");
 						res.send({check:1,user:data[i]});
 						return;
 					}
